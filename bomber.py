@@ -3,8 +3,8 @@ import sys # exit and stuff
 from threading import Thread
 #import optparse
 
-email = "yamum1946@gmail.com" # email that sends
-password = "urmombiggay" # password to that email
+email = "yourEmail" # email that sends
+password = "yourPassword" # password to that email
 
 print()
 address = input("email    : ")
