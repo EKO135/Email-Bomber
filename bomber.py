@@ -8,7 +8,6 @@ password = "yourPassword" # password to that email
 
 print()
 address = input("email    : ")
-subject = input("subject  : ")
 message = input("message  : ")
 
 received = 0
@@ -26,7 +25,7 @@ def send():
 		received += 1
 		print(str(received) + " sent")
 		
-
+		
 	except smtplib.SMTPRecipientsRefused:
 		print("\nYou may have entered an invalid email")
 
