@@ -3,11 +3,11 @@ import sys # exit and stuff
 from threading import Thread
 #import optparse
 
-email = "yourEmail" # email that sends
-password = "yourPassword" # password to that email
+your_email = "yourEmail" # email that sends
+your_password = "yourPassword" # password to that email
 
 print()
-address = input("email    : ")
+their_email = input("email    : ")
 message = input("message  : ")
 
 received = 0
@@ -18,8 +18,8 @@ def send():
 	try:
 		server = smtplib.SMTP('smtp.gmail.com', 587) # connect to server
 		server.starttls() 
-		server.login(email, password) # person sending
-		server.sendmail(email, address , message) # send the message
+		server.login(your_email, password) # person sending
+		server.sendmail(your_email, their_email , message) # send the message
 		server.quit() # close
 
 		received += 1
