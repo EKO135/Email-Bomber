@@ -16,7 +16,7 @@ def send():
 	global received
 
 	try:
-		server = smtplib.SMTP('smtp.gmail.com', 587) # connect to server
+		server = smtplib.SMTP('smtp-mail.outlook.com', 587) # connect to server
 		server.starttls() 
 		server.login(your_email, password) # person sending
 		server.sendmail(your_email, their_email , message) # send the message
