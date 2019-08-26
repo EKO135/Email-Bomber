@@ -1,2 +1,2 @@
 # Email-Bomber
-a python program that spams emails
+python program that spams emails
